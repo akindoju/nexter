@@ -2,9 +2,9 @@
   &__pictures {
     background-color: $color-primary;
     background-image: linear-gradient(
-        rgba($color-primary, 0.5),
-        rgba($color-primary, 0.5)
-      )
+        rgba($color-primary, 0.3),
+        rgba($color-primary, 0.3)
+      ),
       url('../img/back.jpg');
     grid-column: full-start/col-end 4;
     display: grid;
