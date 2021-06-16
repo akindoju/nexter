@@ -9,13 +9,14 @@
 .home {
   background-color: $color-grey-light-1;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 3.5rem;
 
   &__img {
     width: 100%;
     grid-column: 1/-1;
     grid-row: 1/2;
+    z-index: 1;
   }
 
   &__like {
@@ -24,8 +25,8 @@
     fill: $color-primary;
     height: 2.5rem;
     width: 2.5rem;
-    z-index: 20;
-    justify-self: flex-end;
+    z-index: 2;
+    justify-self: end;
     margin: 1rem;
   }
 
@@ -34,7 +35,7 @@
     grid-column: 1/-1;
     justify-self: center;
     width: 80%;
-    z-index: 3; 
+    z-index: 3;
     align-self: end;
     font-family: $font-display;
     font-size: 1.6rem;
@@ -55,10 +56,10 @@
   &__rooms,
   &__area,
   &__price {
-font-size: 1.5rem;
-margin-left: 2rem;
-display: flex;
-align-items: centerb;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: centerb;
 
     svg {
       fill: $color-primary;
@@ -66,7 +67,6 @@ align-items: centerb;
       width: 2rem;
       margin-right: 1rem;
     }
-
   }
 
   &__btn {
